@@ -15,7 +15,6 @@ public class FlamesCheckService {
         System.out.println("Your partner name is "+name2);
         StringBuilder na1 = new StringBuilder(name1);
         StringBuilder na2 = new StringBuilder(name2);
-       
         int m=na1.length();
         int n=na2.length();
         for(int i=0;i<m;i++)
@@ -29,7 +28,6 @@ public class FlamesCheckService {
                 }
             }
         }
-
         String s1="",s3="",s4="";
         String s2="";
         s3 = na1.toString();
@@ -42,7 +40,6 @@ public class FlamesCheckService {
         for(int i=0;i<s4.length();i++){
             if(s4.charAt(i)!='0'){
                 s2=s2+s4.charAt(i);
-                
                 }
             }
         int x = s1.length()+s2.length();  
@@ -57,12 +54,10 @@ public class FlamesCheckService {
             if(y!=0)
             {
                 out=fla.substring(y)+fla.substring(0, y-1);
-                
             }
             else
             {
                 out=fla.substring(0, fla.length()-1);
-                
             }
             fla =new StringBuilder(out);
             c=fla.charAt(0);
@@ -93,7 +88,6 @@ public class FlamesCheckService {
             	c='s';
             	System.out.println("You two are \"SIBLINGS\"");
             	break;
-                
         }
         return c;
     }
