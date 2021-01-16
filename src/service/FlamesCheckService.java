@@ -45,10 +45,7 @@ public class FlamesCheckService {
                 
                 }
             }
-        System.out.println("First String: "+s1);
-        System.out.println("Second String: "+s2);
-        int x = s1.length()+s2.length(); 
-        System.out.println("Length is: "+x);  
+        int x = s1.length()+s2.length();  
         String flames = "flames";
         StringBuilder fla = new StringBuilder(flames);
         char c='a';
@@ -67,7 +64,6 @@ public class FlamesCheckService {
                 out=fla.substring(0, fla.length()-1);
                 
             }
-            System.out.println(out);
             fla =new StringBuilder(out);
             c=fla.charAt(0);
         }
